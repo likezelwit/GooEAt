@@ -1,0 +1,102 @@
+body {
+  font-family: 'Inter', 'ui-sans-serif', 'system-ui', sans-serif;
+  background: #fff;
+}
+
+/* Glass, blur, shadow styling */
+.bg-glass {
+  background: rgba(255,255,255,0.60);
+  backdrop-filter: blur(10px);
+}
+
+.shadow-inset {
+  box-shadow: 0 2px 32px -8px rgb(50 50 80 / 7%) inset;
+}
+
+#modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(18, 23, 42, .62);
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+/* Simple animation keyframes */
+@keyframes bounce-slow {
+  0%,100% { transform: translateY(0);}
+  50% { transform: translateY(16px);}
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.2s infinite;
+}
+
+@media only screen and (max-width: 640px) {
+  #main-nav .gap-5 > a, #main-nav .gap-5 {
+    font-size: 1.09rem;
+  }
+
+  #sticky-call-btn {
+    display: block !important;
+  }
+}
+
+#sticky-call-btn {
+  display: none;
+  pointer-events: auto;
+}
+
+#sticky-call-btn button {
+  outline: none;
+  border: 0;
+  background: linear-gradient(90deg,#3b82f6 60%,#06c 100%);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 2px 16px 0 rgb(60 80 220 /.12);
+  border-radius: 100px;
+  padding: 0.85rem 2.2rem .85rem 2.1rem;
+  font-size: 1.2rem;
+  transition: background .18s,box-shadow .2s, transform .14s;
+  position: relative;
+  z-index: 10001;
+}
+#sticky-call-btn button:active {
+  transform: scale(.98);
+  box-shadow: 0 1px 6px 0 rgb(0 100 255 /.16);
+}
+#sticky-call-btn i {
+  margin-right: .67em;
+  margin-left: .1em;
+  vertical-align: middle;
+}
+
+/* Card hover glassmorphism */
+.service-card {
+  transition: box-shadow .18s, background .21s, transform .16s;
+  background: rgba(248,250,255,0.68);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid #f1f5f9;
+  box-shadow: 0 1px 24px 0 rgb(42 90 260 / .03);
+}
+.service-card:hover, .feature-card:hover {
+  background: rgba(230,245,255,0.89);
+  box-shadow: 0 3px 28px 0 rgb(56 130 250 / .10);
+  transform: translateY(-4px) scale(1.018);
+  border-color: #bae6fd;
+}
+
+.review-card {
+  background: linear-gradient(120deg,#f8fafc 75%,#eff6ff 100%);
+  border: 1.5px solid #e0e7ef;
+  box-shadow: 0 2px 28px -14px rgb(20 70 230 / .04);
+  border-radius: 1.5rem;
+}
+
+.feature-card {
+  border-radius: 2rem;
+  box-shadow: 0 8px 28px -16px #2563eb13;
+  background: #fff;
+  border: 1.5px solid #e0e7ef;
+  transition: box-shadow .15s, transform .16s;
+}
