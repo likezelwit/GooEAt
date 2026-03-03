@@ -1,0 +1,113 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+  "services": [
+    {
+      "name": "Window Cleaning",
+      "icon": "sparkles",
+      "desc": "Crystal-clear glass, streak-free guarantee, inside & out. We tackle residential and commercial—you see the world clearer.",
+      "img": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "name": "Residential Pressure Washing",
+      "icon": "home",
+      "desc": "Boost curb appeal. We remove grime, mold, algae, and stains from siding, brick, decks, patios, and more.",
+      "img": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "name": "Commercial Pressure Washing",
+      "icon": "building",
+      "desc": "Professional, OSHA-safe cleaning for your commercial property. Impress tenants, customers, and inspectors.",
+      "img": "https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "name": "Driveway & Sidewalk Cleaning",
+      "icon": "road",
+      "desc": "Rejuvenate dirty driveways, sidewalks, and pathways. Remove years of dirt and oil in a single visit.",
+      "img": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "name": "Roof & Gutter Cleaning",
+      "icon": "umbrella",
+      "desc": "Prevent costly damage with debris removal, moss/algae treatment, and gutter flow checks. Extend your roof’s life.",
+      "img": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "before_after": [
+    {
+      "before": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=660&q=80",
+      "after": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=660&q=80",
+      "label": "Patio Pressure Washing"
+    },
+    {
+      "before": "https://images.unsplash.com/photo-1433878455169-4698b20b6be9?auto=format&fit=crop&w=660&q=80",
+      "after": "https://images.unsplash.com/photo-1519455953755-af066f52f1ee?auto=format&fit=crop&w=660&q=80",
+      "label": "Window Cleaning"
+    }
+  ],
+  "why": [
+    {
+      "icon": "badge-check",
+      "label": "Licensed & Insured"
+    },
+    {
+      "icon": "star",
+      "label": "5-Star Service"
+    },
+    {
+      "icon": "clock",
+      "label": "Fast Response Time"
+    },
+    {
+      "icon": "wallet",
+      "label": "Affordable Pricing"
+    },
+    {
+      "icon": "leaf",
+      "label": "Eco-Friendly Solutions"
+    },
+    {
+      "icon": "smile",
+      "label": "100% Satisfaction Guarantee"
+    }
+  ],
+  "reviews": [
+    {
+      "stars": 5,
+      "quote": "Showed up on time, super professional & my house literally sparkles. Best exterior cleaning I've ever hired.",
+      "name": "Andrea L.",
+      "service": "House & Driveway"
+    },
+    {
+      "stars": 5,
+      "quote": "RINSE made booking easy. Fast replies, honest pricing, and our storefront has never looked better. Highly recommended!",
+      "name": "Brian M.",
+      "service": "Retail Store"
+    },
+    {
+      "stars": 5,
+      "quote": "Very polite team, wore uniforms, and left everything spotless. Gutters work again, roof looks new—thank you!",
+      "name": "Celeste D.",
+      "service": "Roof & Gutter"
+    },
+    {
+      "stars": 5,
+      "quote": "Called them in an emergency and they fit us in SAME DAY. Driveway stains are GONE.",
+      "name": "Name Withheld",
+      "service": "Driveway Emergency"
+    },
+    {
+      "stars": 5,
+      "quote": "Easy to trust. Detailed, on-time, and listened to my requests. Will be using them every six months.",
+      "name": "Patrick K.",
+      "service": "Windows & Deck"
+    }
+  ],
+  "form_services": [
+    "Window Cleaning",
+    "Residential Pressure Washing",
+    "Commercial Pressure Washing",
+    "Driveway & Sidewalk Cleaning",
+    "Roof & Gutter Cleaning",
+    "Other/Not sure"
+  ]
+}
