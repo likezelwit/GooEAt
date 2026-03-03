@@ -1,176 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#12172A">
-  <title>RINSE Window Cleaning & Pressure Washing | Professional Exterior Cleaning Near You</title>
-  <meta name="description" content="Top rated window cleaning & pressure washing services. Licensed, insured, affordable & detail-obsessed professionals. Get a free quote now for sparkling windows and powerful exterior cleaning.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="app_style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12172A">
+
+<title>RINSE Window Cleaning & Pressure Washing | Professional Exterior Cleaning Near You</title>
+
+<meta name="description" content="Top rated window cleaning & pressure washing services. Licensed, insured, affordable & detail-obsessed professionals. Get a free quote now for sparkling windows and powerful exterior cleaning.">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- ✅ Correct Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="app_style.css">
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+</style>
 </head>
-<body class="min-h-screen bg-white text-zinc-900 font-inter antialiased">
-  <div id="nav-sticky"></div>
-  <header class="relative h-[84vh] flex items-center justify-center bg-no-repeat bg-cover bg-center" id="hero-bg">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/0 z-0 rounded-none"></div>
-    <nav id="main-nav" class="fixed top-0 left-0 w-full z-40 backdrop-blur-lg bg-white/75 shadow-sm transition-transform">
-      <div class="mx-auto max-w-7xl flex items-center justify-between px-4 py-3">
-        <div class="flex items-center gap-2">
-          <span class="text-2xl font-bold tracking-tight text-blue-600 drop-shadow-lg">RINSE</span>
-          <span class="hidden sm:block text-sm font-semibold text-zinc-500">Window Cleaning</span>
-        </div>
-        <div class="hidden md:flex gap-5 text-base font-medium">
-          <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
-          <a href="#difference" class="hover:text-blue-600 transition-colors">Before & After</a>
-          <a href="#why" class="hover:text-blue-600 transition-colors">Why RINSE</a>
-          <a href="#reviews" class="hover:text-blue-600 transition-colors">Reviews</a>
-          <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="tel:+15559997777" class="hidden sm:inline-flex gap-1 items-center px-4 py-2 rounded-full bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 transition active:scale-95"><i data-lucide="phone"></i><span>Call Now</span></a>
-          <button id="open-quote" class="inline-flex px-4 py-2 rounded-full bg-white/60 border border-zinc-200 font-semibold text-blue-600 backdrop-blur-lg hover:bg-blue-50 shadow transition active:scale-95">Get a Free Quote</button>
-          <button id="nav-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-zinc-100 transition">
-            <i data-lucide="menu"></i>
-          </button>
-        </div>
-      </div>
-      <div id="mobile-nav" class="fixed inset-0 z-50 flex flex-col gap-2 bg-white/95 shadow-lg px-7 py-8 translate-x-full transition-transform duration-300 ease-in-out md:hidden"></div>
-    </nav>
-    <div class="z-10 flex flex-col items-center text-center px-4 max-w-2xl">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow-lg text-white mb-6">Crystal Clear Windows.<br>Powerful Pressure Washing.</h1>
-      <p class="text-xl sm:text-2xl font-medium text-white/85 mb-8">Professional exterior cleaning that makes your property shine.</p>
-      <div class="flex flex-col sm:flex-row items-center gap-4">
-        <button id="hero-quote" class="px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-lg font-semibold text-white shadow-xl active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-300 transition">Get a Free Quote</button>
-        <a href="tel:+15559997777" class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-white/80 backdrop-blur border border-zinc-200 hover:bg-blue-50 text-blue-600 text-lg font-semibold shadow active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-300 transition"><i data-lucide="phone-call" class="w-5 h-5"></i>Call Now</a>
-      </div>
-    </div>
-    <div id="scroll-down-arrow" class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce-slow opacity-80">
-      <i data-lucide="chevron-down" class="w-9 h-9 text-blue-600"></i>
-    </div>
-  </header>
 
-  <main class="bg-white">
-    <section id="services" class="py-24 px-4 max-w-7xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-3 text-zinc-900">Our Services</h2>
-        <p class="text-lg text-zinc-500 font-medium">Detail-obsessed cleaning for sparkling windows and spotless exteriors.</p>
-      </div>
-      <div id="service-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
-    </section>
+<body class="min-h-screen bg-white text-zinc-900 antialiased">
 
-    <section id="difference" class="py-24 bg-zinc-50/70 relative z-0 overflow-hidden">
-      <div class="absolute inset-0 pointer-events-none select-none" style="background: radial-gradient(ellipse at 80% 30%, #3b82f650 0, transparent 75%),radial-gradient(ellipse at 15% 90%, #6366f130 0, transparent 75%);"></div>
-      <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-3 text-center text-zinc-900">See the Difference</h2>
-        <div class="flex flex-col sm:flex-row gap-7 mt-14 justify-center items-stretch" id="before-after-area">
-          <!-- Dynamic sliders injected here -->
-        </div>
-      </div>
-    </section>
+<header class="relative h-[84vh] flex items-center justify-center bg-no-repeat bg-cover bg-center">
 
-    <section id="why" class="py-20 px-4 max-w-7xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center text-zinc-900 mb-1">Why Choose <span class="text-blue-600">RINSE?</span></h2>
-      <p class="text-lg text-zinc-500 mb-10 text-center font-medium">Experience the difference trusted professionals can make.</p>
-      <div id="why-features" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-center"></div>
-    </section>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/0 z-0"></div>
 
-    <section id="reviews" class="py-24 px-4 bg-white relative">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center text-zinc-900">Customers Love RINSE</h2>
-        <div class="flex items-center justify-center mb-6">
-          <div class="flex gap-1">
-            <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
-            <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
-            <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
-            <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
-            <i data-lucide="star" class="w-6 h-6 text-yellow-400 fill-yellow-400"></i>
-          </div>
-          <span class="ml-2 text-xl font-semibold text-zinc-700">(5.0)</span>
-        </div>
-        <div id="review-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
-      </div>
-    </section>
+<nav class="fixed top-0 left-0 w-full z-40 backdrop-blur-lg bg-white/75 shadow-sm">
+<div class="mx-auto max-w-7xl flex items-center justify-between px-4 py-3">
 
-    <section id="cta-main" class="py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 relative z-0 flex flex-col items-center justify-center">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-blue-900/0 to-blue-500/0 pointer-events-none"></div>
-      <h2 class="text-3xl sm:text-4xl font-bold text-white text-center mb-6 drop-shadow">Ready to Make Your Property Shine?</h2>
-      <button id="cta-quote" class="mt-4 px-9 py-3 bg-white/70 border backdrop-blur rounded-full text-blue-700 font-bold text-lg shadow-lg hover:bg-blue-50 active:scale-95 transition focus:outline-none focus:ring-2 focus:ring-blue-400">Request Your Free Quote Today</button>
-    </section>
+<div class="flex items-center gap-2">
+<span class="text-2xl font-bold tracking-tight text-blue-600">RINSE</span>
+<span class="hidden sm:block text-sm font-semibold text-zinc-500">Window Cleaning</span>
+</div>
 
-    <section id="contact" class="py-24 px-4 max-w-3xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-2 text-center text-zinc-900">Contact & Booking</h2>
-      <p class="text-lg text-zinc-500 mb-8 text-center font-medium">Fast response. Professional service. 100% satisfaction—guaranteed.</p>
-      <div class="bg-white/80 backdrop-blur rounded-3xl shadow-xl p-8 border border-zinc-100">
-        <form id="booking-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex flex-col gap-2">
-            <label for="name" class="font-semibold text-zinc-600">Name</label>
-            <input id="name" type="text" required class="rounded-xl px-4 py-3 bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium shadow-inset border border-zinc-200" placeholder="Your Name">
-          </div>
-          <div class="flex flex-col gap-2">
-            <label for="phone" class="font-semibold text-zinc-600">Phone</label>
-            <input id="phone" type="tel" required class="rounded-xl px-4 py-3 bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium shadow-inset border border-zinc-200" placeholder="(555) 999-7777">
-          </div>
-          <div class="flex flex-col gap-2 md:col-span-2">
-            <label for="email" class="font-semibold text-zinc-600">Email</label>
-            <input id="email" type="email" required class="rounded-xl px-4 py-3 bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium shadow-inset border border-zinc-200" placeholder="you@email.com">
-          </div>
-          <div class="flex flex-col gap-2">
-            <label for="service" class="font-semibold text-zinc-600">Service</label>
-            <select id="service" required class="rounded-xl px-3 py-3 bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium shadow-inset border border-zinc-200">
-            </select>
-          </div>
-          <div class="flex flex-col gap-2">
-            <label for="message" class="font-semibold text-zinc-600">Message</label>
-            <textarea id="message" rows="3" class="rounded-xl px-4 py-3 bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium shadow-inset border border-zinc-200 resize-none" placeholder="How can we help you?"></textarea>
-          </div>
-          <div class="md:col-span-2 mt-4 justify-center flex">
-            <button id="submit-booking" type="submit" class="px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-lg active:scale-95 transition focus:outline-none focus:ring-2 focus:ring-blue-400 w-full max-w-xs">Submit Request</button>
-          </div>
-          <div class="md:col-span-2 mt-2 text-center" id="booking-status"></div>
-        </form>
-      </div>
-    </section>
-  </main>
+<div class="hidden md:flex gap-5 text-base font-medium">
+<a href="#services" class="hover:text-blue-600 transition">Services</a>
+<a href="#difference" class="hover:text-blue-600 transition">Before & After</a>
+<a href="#why" class="hover:text-blue-600 transition">Why RINSE</a>
+<a href="#reviews" class="hover:text-blue-600 transition">Reviews</a>
+<a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+</div>
 
-  <footer class="bg-white/95 backdrop-blur-lg border-t border-zinc-100 py-10 px-4 w-full text-zinc-700 text-sm">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-0 items-center justify-between">
-      <div class="flex flex-col items-center md:items-start gap-2">
-        <span class="font-bold text-lg text-blue-700">RINSE Window Cleaning & Pressure Washing</span>
-        <span>Serving: Greater Metro City Area</span>
-        <span>Phone: <a href="tel:+15559997777" class="text-blue-600 hover:underline">+1 (555) 999-7777</a></span>
-        <span>Email: <a href="mailto:hello@rinseclean.com" class="text-blue-600 hover:underline">hello@rinseclean.com</a></span>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-6 items-center">
-        <div class="flex gap-4 mb-4 sm:mb-0">
-          <a href="#services" class="hover:text-blue-600">Services</a>
-          <a href="#why" class="hover:text-blue-600">Why RINSE</a>
-          <a href="#contact" class="hover:text-blue-600">Contact</a>
-        </div>
-        <div class="flex gap-3">
-          <a href="#" class="rounded-full p-2 hover:bg-blue-50 transition" aria-label="Instagram"><i data-lucide="instagram" class="w-5 h-5 text-zinc-500"></i></a>
-          <a href="#" class="rounded-full p-2 hover:bg-blue-50 transition" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5 text-zinc-500"></i></a>
-          <a href="#" class="rounded-full p-2 hover:bg-blue-50 transition" aria-label="Twitter"><i data-lucide="twitter" class="w-5 h-5 text-zinc-500"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="mt-6 text-center text-zinc-400">Copyright &copy; <span id="copyright-year"></span> RINSE Window Cleaning. All rights reserved.</div>
-  </footer>
-  <div id="sticky-call-btn" class="fixed bottom-4 right-4 z-50 md:hidden"></div>
-  <div id="modal-overlay"></div>
+<a href="tel:+15559997777" class="px-4 py-2 rounded-full bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition">
+Call Now
+</a>
 
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.276.0/dist/umd/lucide.min.js"></script>
-  <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script type="module" src="site_data.json"></script>
-  <script type="module" src="ui_components.js"></script>
-  <script type="module" src="before_after_slider.js"></script>
-  <script type="module" src="booking_form.js"></script>
-  <script>
-    window.onload = function() {
-      lucide.createIcons();
-      document.getElementById('copyright-year').textContent = (new Date()).getFullYear();
-    }
-  </script>
+</div>
+</nav>
+
+<div class="z-10 flex flex-col items-center text-center px-4 max-w-2xl">
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6">
+Crystal Clear Windows.<br>Powerful Pressure Washing.
+</h1>
+
+<p class="text-xl sm:text-2xl text-white/85 mb-8">
+Professional exterior cleaning that makes your property shine.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#contact" class="px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-lg font-semibold text-white shadow transition">
+Get a Free Quote
+</a>
+
+<a href="tel:+15559997777" class="px-7 py-3 rounded-full bg-white text-blue-600 text-lg font-semibold shadow transition">
+Call Now
+</a>
+</div>
+</div>
+</header>
+
+<main>
+
+<section id="services" class="py-24 px-4 max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold mb-3">Our Services</h2>
+<p class="text-lg text-zinc-500">Detail-obsessed cleaning for sparkling windows and spotless exteriors.</p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+<div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-semibold mb-2">Window Cleaning</h3>
+<p class="text-zinc-600">Streak-free interior and exterior window cleaning.</p>
+</div>
+
+<div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-semibold mb-2">Residential Pressure Washing</h3>
+<p class="text-zinc-600">Restore your driveway, siding, patio, and more.</p>
+</div>
+
+<div class="p-6 bg-white rounded-2xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-semibold mb-2">Commercial Cleaning</h3>
+<p class="text-zinc-600">Keep your business exterior spotless and professional.</p>
+</div>
+
+</div>
+</section>
+
+<section id="cta-main" class="py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-center text-white">
+<h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Make Your Property Shine?</h2>
+<a href="#contact" class="px-9 py-3 bg-white text-blue-700 font-bold rounded-full shadow hover:bg-blue-50 transition">
+Request Your Free Quote Today
+</a>
+</section>
+
+<section id="contact" class="py-24 px-4 max-w-3xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">Contact & Booking</h2>
+
+<form class="grid gap-6 bg-white p-8 rounded-2xl shadow">
+
+<input type="text" placeholder="Your Name" required class="rounded-xl px-4 py-3 bg-zinc-50 border">
+
+<input type="tel" placeholder="Phone" required class="rounded-xl px-4 py-3 bg-zinc-50 border">
+
+<input type="email" placeholder="Email" required class="rounded-xl px-4 py-3 bg-zinc-50 border">
+
+<textarea placeholder="How can we help you?" rows="4" class="rounded-xl px-4 py-3 bg-zinc-50 border"></textarea>
+
+<button type="submit" class="px-7 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold shadow transition">
+Submit Request
+</button>
+
+</form>
+</section>
+
+</main>
+
+<footer class="bg-white border-t py-10 px-4 text-center text-sm text-zinc-500">
+<p>© <span id="year"></span> RINSE Window Cleaning & Pressure Washing</p>
+<p>Phone: +1 (555) 999-7777</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
